@@ -18,12 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.remedyArray = [[NSArray alloc] initWithObjects:@"Meditation", @"Yoga Breathing", @"Passion Flower", @"GABA", nil];
+    self.dao = [DAO sharedManager];
     
-    self.remedyDescriptionArray = [[NSArray alloc] initWithObjects:@"Meditation", @"Yoga", @"Herb", @"Supplement", nil];
-    
-    self.urlArray = [[NSArray alloc] initWithObjects:@"https://www.gaiam.com/discover/313/article/calming-mind-meditation-exercise/", @"http://www.mindbodygreen.com/0-18608/11-yoga-poses-to-calm-your-mind-invigorate-your-body.html", @"https://en.wikipedia.org/wiki/Passiflora", @"http://www.webmd.com/vitamins-and-supplements/gaba-uses-and-risks", nil];
-
     //register TableViewCell xib file and cell identifier for custom cell reuse
     [self.remedyTV registerNib:[UINib nibWithNibName:@"BulletedTableViewCell" bundle:nil] forCellReuseIdentifier:@"myCell"];
     
@@ -34,9 +30,13 @@
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addButtonTapped:)];
+     self.navigationItem.rightBarButtonItems = @[addButton, self.editButtonItem];
 }
 
+- (void) addButtonTapped: (id) sender {
+    NSLog(@"addButtonTapped");
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -49,7 +49,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.remedyArray.count;
+    return self.remedyList.count;
 }
 
 
@@ -57,18 +57,19 @@
     BulletedTableViewCell *cell = (BulletedTableViewCell *)[tableView dequeueReusableCellWithIdentifier:@"myCell" forIndexPath:indexPath];
     
     // Configure the cell...
-    cell.nameLabel.text = self.remedyArray[indexPath.row];
-    cell.descriptionLabel.text = [self.remedyDescriptionArray objectAtIndex:indexPath.row];
-    if ([self.remedyDescriptionArray[indexPath.row] isEqualToString:@"Meditation"]) {
+    cell.nameLabel.text = self.remedyList[indexPath.row].remedyName;
+    cell.descriptionLabel.text = [self.remedyList objectAtIndex:indexPath.row].remedyDescription;
+    
+    if ([self.remedyList[indexPath.row].remedyType isEqualToString:@"Meditation"]) {
         cell.bullet.image = [UIImage imageNamed: @"meditation.png"];
     }
-    else if ([self.remedyDescriptionArray[indexPath.row] isEqualToString:@"Yoga"]) {
+    else if ([self.remedyList[indexPath.row].remedyType isEqualToString:@"Yoga"]) {
         cell.bullet.image = [UIImage imageNamed:@"yoga.png"];
     }
-    else if ([self.remedyDescriptionArray[indexPath.row] isEqualToString:@"Herb"]) {
+    else if ([self.remedyList[indexPath.row].remedyType isEqualToString:@"Herb"]) {
         cell.bullet.image = [UIImage imageNamed:@"herb.png"];
     }
-    else if ([self.remedyDescriptionArray[indexPath.row] isEqualToString:@"Supplement"]) {
+    else if ([self.remedyList[indexPath.row].remedyType isEqualToString:@"Supplement"]) {
         cell.bullet.image = [UIImage imageNamed:@"capsule.png"];
     }
     
@@ -120,8 +121,8 @@
     WebViewController *webVC = [[WebViewController alloc] initWithNibName:@"WebViewController" bundle:nil];
     
     // Pass the selected object to the new view controller.
-    webVC.url = [NSURL URLWithString: self.urlArray[indexPath.row]];
-    webVC.title = self.remedyArray[indexPath.row];
+    webVC.url = [NSURL URLWithString: self.remedyList[indexPath.row].remedyURL];
+    webVC.title = self.remedyList[indexPath.row].remedyName;
     
     // Push the view controller.
     [self.navigationController pushViewController:webVC animated:YES];

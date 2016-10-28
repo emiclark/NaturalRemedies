@@ -8,15 +8,15 @@
 
 #import <UIKit/UIKit.h>
 #import "WebViewController.h"
+#import "Remedy.h"
+#import "DAO.h"
 
 @interface RemedyListTableViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>
-@property (nonatomic, strong) NSArray *remedyArray;
-@property (nonatomic, strong) NSArray *remedyDescriptionArray;
-@property (nonatomic, strong) NSArray *urlArray;
-@property (nonatomic, strong) NSString *remedyViewTitle;
-
+@property (nonatomic, retain) NSMutableArray <Remedy*> *remedyList;
+@property (nonatomic, retain) DAO *dao;
 
 @property (nonatomic, strong) IBOutlet UITableView *remedyTV;
 @property (nonatomic, strong) WebViewController *webView;
 
+- (void) addButtonTapped: (id) sender;
 @end

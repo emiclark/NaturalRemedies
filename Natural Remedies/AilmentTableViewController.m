@@ -18,9 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.ailmentArray = [[NSMutableArray alloc] initWithObjects:@"Stress Reduction", @"Focus and Study", @"Relaxation and Sleep", nil];
-    
-    self.ailmentDescriptionArray = [[NSMutableArray alloc] initWithObjects:@"Adaptogens", @"Cognitive support, memory retention", @"Quieting racing thoughts, Insomnia", nil];
+    self.dao = [DAO sharedManager];
     
     [self.ailmentTableView setSeparatorStyle:UITableViewCellSeparatorStyleSingleLine];
     [self.ailmentTableView setSeparatorColor:[UIColor lightGrayColor]];
@@ -28,19 +26,33 @@
     //register TableViewCell xib file and cell identifier for custom cell reuse
     [self.ailmentTableView registerNib:[UINib nibWithNibName:@"BulletedTableViewCell" bundle:nil] forCellReuseIdentifier:@"myCell"];
 
-    
-    NSLog(@"%@ - %@",self.ailmentArray, self.ailmentDescriptionArray);
+    NSLog(@"%@",self.dao.ailmentList);
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addButtonTapped:)];
+     self.navigationItem.rightBarButtonItems = @[addButton, self.editButtonItem];
+}
+
+- (void) viewWillAppear:(BOOL)animated {
+    [self.ailmentTableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark Buttons Tapped
+
+- (void ) addButtonTapped: (id) sender {
+    NSLog(@"addButtonTapped ");
+    self.editAilmentVC = [[editAilmentViewController alloc] initWithNibName:@"editAilmentViewController" bundle:nil];
+    
+    self.editAilmentVC.title = @"Add New Ailment";
+    [self.navigationController pushViewController:self.editAilmentVC animated:YES];
 }
 
 #pragma mark - Table view data source
@@ -50,7 +62,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return (self.ailmentArray.count);
+    return (self.dao.ailmentList.count);
 }
 
 
@@ -60,8 +72,8 @@
     BulletedTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"myCell" forIndexPath:indexPath ];
     
     //format and display information for the cell
-    cell.nameLabel.text = [self.ailmentArray objectAtIndex:indexPath.row];
-    cell.descriptionLabel.text = [self.ailmentDescriptionArray objectAtIndex:indexPath.row];
+    cell.nameLabel.text = [self.dao.ailmentList objectAtIndex:indexPath.row].ailmentName;
+    cell.descriptionLabel.text = [self.dao.ailmentList objectAtIndex:indexPath.row].ailmentDescription;
     return cell;
         
 }
@@ -107,12 +119,10 @@
 // In a xib-based application, navigation from a table can be handled in -tableView:didSelectRowAtIndexPath:
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    NSLog(@"%@ - %@",[self.ailmentArray objectAtIndex:indexPath.row], [self.ailmentDescriptionArray objectAtIndex: indexPath.row]);
-    
-    
     // create view controller object for remedy view controller
     self.remedyListVC = [[RemedyListTableViewController alloc] initWithNibName:@"RemedyListTableViewController" bundle:nil];
-    self.remedyListVC.title = self.ailmentArray[indexPath.row];
+    self.remedyListVC.title = self.dao.ailmentList[indexPath.row].ailmentName;
+    self.remedyListVC.remedyList = self.dao.ailmentList[indexPath.row].remedyList;
     
     // Push the view controller.
     [self.navigationController pushViewController: self.remedyListVC animated:YES];

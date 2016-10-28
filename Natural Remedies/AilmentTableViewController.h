@@ -8,16 +8,20 @@
 
 #import <UIKit/UIKit.h>
 #import "RemedyListTableViewController.h"
+#import "editAilmentViewController.h"
+#import "DAO.h"
+
+@class editAilmentViewController;
 
 @interface AilmentTableViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>
 
-@property (nonatomic, strong) NSMutableArray *ailmentArray;
-@property (nonatomic, strong) NSMutableArray *ailmentDescriptionArray;
+@property (nonatomic, strong) DAO *dao;
 
 @property (nonatomic, strong) RemedyListTableViewController *remedyListVC;
+@property (nonatomic, strong) editAilmentViewController *editAilmentVC;
 
 @property (strong, nonatomic) IBOutlet UITableView *ailmentTableView;
-
+- (void ) addButtonTapped: (id) sender;
 
 
 @end
