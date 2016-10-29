@@ -100,19 +100,22 @@
 }
 
 
-/*
+
 // Override to support rearranging the table view.
 - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
+    Remedy *objectToMove = [self.remedyList objectAtIndex:fromIndexPath.row];
+    [self.remedyList removeObjectAtIndex:fromIndexPath.row];
+    [self.remedyList insertObject:objectToMove atIndex:toIndexPath.row];
 }
-*/
 
-/*
+
+
 // Override to support conditional rearranging of the table view.
 - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
     // Return NO if you do not want the item to be re-orderable.
     return YES;
 }
-*/
+
 
 #pragma mark - Table view delegate
 
