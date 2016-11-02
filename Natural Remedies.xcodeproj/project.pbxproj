@@ -1,491 +1,1531 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 47;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		0022EB531DB6A4E300284D9D /* RemedyListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0022EB511DB6A4E300284D9D /* RemedyListTableViewController.m */; };
-		0022EB541DB6A4E300284D9D /* RemedyListTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0022EB521DB6A4E300284D9D /* RemedyListTableViewController.xib */; };
-		0036EF901DC39B84008C39CD /* Remedy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0036EF8F1DC39B84008C39CD /* Remedy.m */; };
-		0036EF941DC39C11008C39CD /* Ailment.m in Sources */ = {isa = PBXBuildFile; fileRef = 0036EF931DC39C11008C39CD /* Ailment.m */; };
-		0036EF981DC39CA7008C39CD /* DAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 0036EF971DC39CA7008C39CD /* DAO.m */; };
-		003FB69D1DBE8977002F0E8D /* ailmentBullet4.png in Resources */ = {isa = PBXBuildFile; fileRef = 003FB69C1DBE8977002F0E8D /* ailmentBullet4.png */; };
-		003FB6A71DBEE8F7002F0E8D /* editAilmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 003FB6A51DBEE8F7002F0E8D /* editAilmentViewController.m */; };
-		003FB6A81DBEE8F7002F0E8D /* editAilmentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 003FB6A61DBEE8F7002F0E8D /* editAilmentViewController.xib */; };
-		005DBD5D1DBA818B0039D2FD /* BulletedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 005DBD5B1DBA818B0039D2FD /* BulletedTableViewCell.m */; };
-		005DBD5E1DBA818B0039D2FD /* BulletedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 005DBD5C1DBA818B0039D2FD /* BulletedTableViewCell.xib */; };
-		005DBD671DBA8EF40039D2FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 005DBD661DBA8EF40039D2FD /* Main.storyboard */; };
-		005DBD6B1DBA9ACE0039D2FD /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 005DBD691DBA9ACE0039D2FD /* WebViewController.m */; };
-		005DBD6C1DBA9ACE0039D2FD /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 005DBD6A1DBA9ACE0039D2FD /* WebViewController.xib */; };
-		005DBD731DBAA44D0039D2FD /* herb.png in Resources */ = {isa = PBXBuildFile; fileRef = 005DBD701DBAA44D0039D2FD /* herb.png */; };
-		005DBD741DBAA44D0039D2FD /* meditation.png in Resources */ = {isa = PBXBuildFile; fileRef = 005DBD711DBAA44D0039D2FD /* meditation.png */; };
-		005DBD751DBAA44D0039D2FD /* yoga.png in Resources */ = {isa = PBXBuildFile; fileRef = 005DBD721DBAA44D0039D2FD /* yoga.png */; };
-		005DBD771DBAB1430039D2FD /* capsule.png in Resources */ = {isa = PBXBuildFile; fileRef = 005DBD761DBAB1430039D2FD /* capsule.png */; };
-		006C62C41DC8CE44001047D7 /* editRemedyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 006C62C21DC8CE44001047D7 /* editRemedyViewController.m */; };
-		006C62C51DC8CE44001047D7 /* editRemedyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 006C62C31DC8CE44001047D7 /* editRemedyViewController.xib */; };
-		008AE3E51DB18AD800A98631 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 008AE3E41DB18AD800A98631 /* main.m */; };
-		008AE3E81DB18AD800A98631 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 008AE3E71DB18AD800A98631 /* AppDelegate.m */; };
-		008AE3F01DB18AD800A98631 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 008AE3EF1DB18AD800A98631 /* Assets.xcassets */; };
-		008AE3F31DB18AD800A98631 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 008AE3F11DB18AD800A98631 /* LaunchScreen.storyboard */; };
-		008AE3FD1DB18CB600A98631 /* AilmentTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 008AE3FB1DB18CB600A98631 /* AilmentTableViewController.m */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXFileReference section */
-		0022EB501DB6A4E300284D9D /* RemedyListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RemedyListTableViewController.h; path = "Natural Remedies/RemedyListTableViewController.h"; sourceTree = "<group>"; };
-		0022EB511DB6A4E300284D9D /* RemedyListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RemedyListTableViewController.m; path = "Natural Remedies/RemedyListTableViewController.m"; sourceTree = "<group>"; };
-		0022EB521DB6A4E300284D9D /* RemedyListTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RemedyListTableViewController.xib; path = "Natural Remedies/RemedyListTableViewController.xib"; sourceTree = "<group>"; };
-		0036EF8E1DC39B84008C39CD /* Remedy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Remedy.h; path = "Natural Remedies/Remedy.h"; sourceTree = "<group>"; };
-		0036EF8F1DC39B84008C39CD /* Remedy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Remedy.m; path = "Natural Remedies/Remedy.m"; sourceTree = "<group>"; };
-		0036EF921DC39C11008C39CD /* Ailment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Ailment.h; path = "Natural Remedies/Ailment.h"; sourceTree = "<group>"; };
-		0036EF931DC39C11008C39CD /* Ailment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Ailment.m; path = "Natural Remedies/Ailment.m"; sourceTree = "<group>"; };
-		0036EF961DC39CA7008C39CD /* DAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DAO.h; path = "Natural Remedies/DAO.h"; sourceTree = "<group>"; };
-		0036EF971DC39CA7008C39CD /* DAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DAO.m; path = "Natural Remedies/DAO.m"; sourceTree = "<group>"; };
-		003FB69C1DBE8977002F0E8D /* ailmentBullet4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ailmentBullet4.png; sourceTree = "<group>"; };
-		003FB6A41DBEE8F7002F0E8D /* editAilmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = editAilmentViewController.h; path = "Natural Remedies/editAilmentViewController.h"; sourceTree = "<group>"; };
-		003FB6A51DBEE8F7002F0E8D /* editAilmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = editAilmentViewController.m; path = "Natural Remedies/editAilmentViewController.m"; sourceTree = "<group>"; };
-		003FB6A61DBEE8F7002F0E8D /* editAilmentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = editAilmentViewController.xib; path = "Natural Remedies/editAilmentViewController.xib"; sourceTree = "<group>"; };
-		005DBD5A1DBA818B0039D2FD /* BulletedTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BulletedTableViewCell.h; sourceTree = "<group>"; };
-		005DBD5B1DBA818B0039D2FD /* BulletedTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BulletedTableViewCell.m; sourceTree = "<group>"; };
-		005DBD5C1DBA818B0039D2FD /* BulletedTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BulletedTableViewCell.xib; sourceTree = "<group>"; };
-		005DBD661DBA8EF40039D2FD /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		005DBD681DBA9ACE0039D2FD /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WebViewController.h; path = "Natural Remedies/WebViewController.h"; sourceTree = "<group>"; };
-		005DBD691DBA9ACE0039D2FD /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WebViewController.m; path = "Natural Remedies/WebViewController.m"; sourceTree = "<group>"; };
-		005DBD6A1DBA9ACE0039D2FD /* WebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WebViewController.xib; path = "Natural Remedies/WebViewController.xib"; sourceTree = "<group>"; };
-		005DBD701DBAA44D0039D2FD /* herb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = herb.png; sourceTree = "<group>"; };
-		005DBD711DBAA44D0039D2FD /* meditation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = meditation.png; sourceTree = "<group>"; };
-		005DBD721DBAA44D0039D2FD /* yoga.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yoga.png; sourceTree = "<group>"; };
-		005DBD761DBAB1430039D2FD /* capsule.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = capsule.png; sourceTree = "<group>"; };
-		006C62C11DC8CE44001047D7 /* editRemedyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = editRemedyViewController.h; path = "Natural Remedies/editRemedyViewController.h"; sourceTree = "<group>"; };
-		006C62C21DC8CE44001047D7 /* editRemedyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = editRemedyViewController.m; path = "Natural Remedies/editRemedyViewController.m"; sourceTree = "<group>"; };
-		006C62C31DC8CE44001047D7 /* editRemedyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = editRemedyViewController.xib; path = "Natural Remedies/editRemedyViewController.xib"; sourceTree = "<group>"; };
-		008AE3E01DB18AD800A98631 /* Natural Remedies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Natural Remedies.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		008AE3E41DB18AD800A98631 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		008AE3E61DB18AD800A98631 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		008AE3E71DB18AD800A98631 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		008AE3EF1DB18AD800A98631 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		008AE3F21DB18AD800A98631 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		008AE3F41DB18AD800A98631 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		008AE3FA1DB18CB600A98631 /* AilmentTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AilmentTableViewController.h; path = "Natural Remedies/AilmentTableViewController.h"; sourceTree = "<group>"; };
-		008AE3FB1DB18CB600A98631 /* AilmentTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AilmentTableViewController.m; path = "Natural Remedies/AilmentTableViewController.m"; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		008AE3DD1DB18AD800A98631 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		0022EB551DB6A4EB00284D9D /* RemedyListVC */ = {
-			isa = PBXGroup;
-			children = (
-				0022EB501DB6A4E300284D9D /* RemedyListTableViewController.h */,
-				0022EB511DB6A4E300284D9D /* RemedyListTableViewController.m */,
-				0022EB521DB6A4E300284D9D /* RemedyListTableViewController.xib */,
-			);
-			name = RemedyListVC;
-			path = ..;
-			sourceTree = "<group>";
-		};
-		0036EF911DC39B89008C39CD /* Remedy */ = {
-			isa = PBXGroup;
-			children = (
-				0036EF8E1DC39B84008C39CD /* Remedy.h */,
-				0036EF8F1DC39B84008C39CD /* Remedy.m */,
-			);
-			name = Remedy;
-			path = ..;
-			sourceTree = "<group>";
-		};
-		0036EF951DC39C16008C39CD /* Ailment */ = {
-			isa = PBXGroup;
-			children = (
-				0036EF921DC39C11008C39CD /* Ailment.h */,
-				0036EF931DC39C11008C39CD /* Ailment.m */,
-			);
-			name = Ailment;
-			path = ..;
-			sourceTree = "<group>";
-		};
-		0036EF991DC39CAD008C39CD /* DAO */ = {
-			isa = PBXGroup;
-			children = (
-				0036EF961DC39CA7008C39CD /* DAO.h */,
-				0036EF971DC39CA7008C39CD /* DAO.m */,
-			);
-			name = DAO;
-			path = ..;
-			sourceTree = "<group>";
-		};
-		003FB6A91DBEE903002F0E8D /* editAilmentVC */ = {
-			isa = PBXGroup;
-			children = (
-				003FB6A41DBEE8F7002F0E8D /* editAilmentViewController.h */,
-				003FB6A51DBEE8F7002F0E8D /* editAilmentViewController.m */,
-				003FB6A61DBEE8F7002F0E8D /* editAilmentViewController.xib */,
-			);
-			name = editAilmentVC;
-			path = ..;
-			sourceTree = "<group>";
-		};
-		005DBD591DBA81450039D2FD /* TableViewCell */ = {
-			isa = PBXGroup;
-			children = (
-				005DBD5A1DBA818B0039D2FD /* BulletedTableViewCell.h */,
-				005DBD5B1DBA818B0039D2FD /* BulletedTableViewCell.m */,
-				005DBD5C1DBA818B0039D2FD /* BulletedTableViewCell.xib */,
-			);
-			name = TableViewCell;
-			sourceTree = "<group>";
-		};
-		005DBD651DBA8EA90039D2FD /* images */ = {
-			isa = PBXGroup;
-			children = (
-				005DBD761DBAB1430039D2FD /* capsule.png */,
-				005DBD701DBAA44D0039D2FD /* herb.png */,
-				005DBD711DBAA44D0039D2FD /* meditation.png */,
-				003FB69C1DBE8977002F0E8D /* ailmentBullet4.png */,
-				005DBD721DBAA44D0039D2FD /* yoga.png */,
-			);
-			name = images;
-			sourceTree = "<group>";
-		};
-		005DBD6D1DBA9AD50039D2FD /* WebView */ = {
-			isa = PBXGroup;
-			children = (
-				005DBD681DBA9ACE0039D2FD /* WebViewController.h */,
-				005DBD691DBA9ACE0039D2FD /* WebViewController.m */,
-				005DBD6A1DBA9ACE0039D2FD /* WebViewController.xib */,
-			);
-			name = WebView;
-			path = ..;
-			sourceTree = "<group>";
-		};
-		006C62C61DC8CE4A001047D7 /* editRemedyVC */ = {
-			isa = PBXGroup;
-			children = (
-				006C62C11DC8CE44001047D7 /* editRemedyViewController.h */,
-				006C62C21DC8CE44001047D7 /* editRemedyViewController.m */,
-				006C62C31DC8CE44001047D7 /* editRemedyViewController.xib */,
-			);
-			name = editRemedyVC;
-			path = ..;
-			sourceTree = "<group>";
-		};
-		008AE3D71DB18AD800A98631 = {
-			isa = PBXGroup;
-			children = (
-				008AE3E21DB18AD800A98631 /* Natural Remedies */,
-				008AE3E11DB18AD800A98631 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		008AE3E11DB18AD800A98631 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				008AE3E01DB18AD800A98631 /* Natural Remedies.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		008AE3E21DB18AD800A98631 /* Natural Remedies */ = {
-			isa = PBXGroup;
-			children = (
-				008AE3E61DB18AD800A98631 /* AppDelegate.h */,
-				008AE3E71DB18AD800A98631 /* AppDelegate.m */,
-				005DBD661DBA8EF40039D2FD /* Main.storyboard */,
-				0036EF991DC39CAD008C39CD /* DAO */,
-				0036EF951DC39C16008C39CD /* Ailment */,
-				0036EF911DC39B89008C39CD /* Remedy */,
-				005DBD591DBA81450039D2FD /* TableViewCell */,
-				008AE3FF1DB18CBD00A98631 /* AilmentVC */,
-				003FB6A91DBEE903002F0E8D /* editAilmentVC */,
-				0022EB551DB6A4EB00284D9D /* RemedyListVC */,
-				006C62C61DC8CE4A001047D7 /* editRemedyVC */,
-				005DBD6D1DBA9AD50039D2FD /* WebView */,
-				008AE3EF1DB18AD800A98631 /* Assets.xcassets */,
-				005DBD651DBA8EA90039D2FD /* images */,
-				008AE3F11DB18AD800A98631 /* LaunchScreen.storyboard */,
-				008AE3F41DB18AD800A98631 /* Info.plist */,
-				008AE3E31DB18AD800A98631 /* Supporting Files */,
-			);
-			path = "Natural Remedies";
-			sourceTree = "<group>";
-		};
-		008AE3E31DB18AD800A98631 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				008AE3E41DB18AD800A98631 /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		008AE3FF1DB18CBD00A98631 /* AilmentVC */ = {
-			isa = PBXGroup;
-			children = (
-				008AE3FA1DB18CB600A98631 /* AilmentTableViewController.h */,
-				008AE3FB1DB18CB600A98631 /* AilmentTableViewController.m */,
-			);
-			name = AilmentVC;
-			path = ..;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		008AE3DF1DB18AD800A98631 /* Natural Remedies */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 008AE3F71DB18AD800A98631 /* Build configuration list for PBXNativeTarget "Natural Remedies" */;
-			buildPhases = (
-				008AE3DC1DB18AD800A98631 /* Sources */,
-				008AE3DD1DB18AD800A98631 /* Frameworks */,
-				008AE3DE1DB18AD800A98631 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Natural Remedies";
-			productName = "Natural Remedies";
-			productReference = 008AE3E01DB18AD800A98631 /* Natural Remedies.app */;
-			productType = "com.apple.product-type.application";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		008AE3D81DB18AD800A98631 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastUpgradeCheck = 0730;
-				ORGANIZATIONNAME = "Emiko Clark";
-				TargetAttributes = {
-					008AE3DF1DB18AD800A98631 = {
-						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = X9KW2SQ39Q;
-					};
-				};
-			};
-			buildConfigurationList = 008AE3DB1DB18AD800A98631 /* Build configuration list for PBXProject "Natural Remedies" */;
-			compatibilityVersion = "Xcode 6.3";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = 008AE3D71DB18AD800A98631;
-			productRefGroup = 008AE3E11DB18AD800A98631 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				008AE3DF1DB18AD800A98631 /* Natural Remedies */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		008AE3DE1DB18AD800A98631 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				005DBD771DBAB1430039D2FD /* capsule.png in Resources */,
-				003FB6A81DBEE8F7002F0E8D /* editAilmentViewController.xib in Resources */,
-				005DBD751DBAA44D0039D2FD /* yoga.png in Resources */,
-				006C62C51DC8CE44001047D7 /* editRemedyViewController.xib in Resources */,
-				005DBD671DBA8EF40039D2FD /* Main.storyboard in Resources */,
-				008AE3F31DB18AD800A98631 /* LaunchScreen.storyboard in Resources */,
-				005DBD6C1DBA9ACE0039D2FD /* WebViewController.xib in Resources */,
-				003FB69D1DBE8977002F0E8D /* ailmentBullet4.png in Resources */,
-				005DBD731DBAA44D0039D2FD /* herb.png in Resources */,
-				005DBD5E1DBA818B0039D2FD /* BulletedTableViewCell.xib in Resources */,
-				0022EB541DB6A4E300284D9D /* RemedyListTableViewController.xib in Resources */,
-				005DBD741DBAA44D0039D2FD /* meditation.png in Resources */,
-				008AE3F01DB18AD800A98631 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		008AE3DC1DB18AD800A98631 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0036EF981DC39CA7008C39CD /* DAO.m in Sources */,
-				006C62C41DC8CE44001047D7 /* editRemedyViewController.m in Sources */,
-				0036EF941DC39C11008C39CD /* Ailment.m in Sources */,
-				008AE3E81DB18AD800A98631 /* AppDelegate.m in Sources */,
-				0036EF901DC39B84008C39CD /* Remedy.m in Sources */,
-				005DBD6B1DBA9ACE0039D2FD /* WebViewController.m in Sources */,
-				008AE3E51DB18AD800A98631 /* main.m in Sources */,
-				003FB6A71DBEE8F7002F0E8D /* editAilmentViewController.m in Sources */,
-				005DBD5D1DBA818B0039D2FD /* BulletedTableViewCell.m in Sources */,
-				0022EB531DB6A4E300284D9D /* RemedyListTableViewController.m in Sources */,
-				008AE3FD1DB18CB600A98631 /* AilmentTableViewController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		008AE3F11DB18AD800A98631 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				008AE3F21DB18AD800A98631 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		008AE3F51DB18AD800A98631 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		008AE3F61DB18AD800A98631 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		008AE3F81DB18AD800A98631 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = X9KW2SQ39Q;
-				INFOPLIST_FILE = "Natural Remedies/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.emikoclark.Natural-Remedies";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Debug;
-		};
-		008AE3F91DB18AD800A98631 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = X9KW2SQ39Q;
-				INFOPLIST_FILE = "Natural Remedies/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.emikoclark.Natural-Remedies";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		008AE3DB1DB18AD800A98631 /* Build configuration list for PBXProject "Natural Remedies" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				008AE3F51DB18AD800A98631 /* Debug */,
-				008AE3F61DB18AD800A98631 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		008AE3F71DB18AD800A98631 /* Build configuration list for PBXNativeTarget "Natural Remedies" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				008AE3F81DB18AD800A98631 /* Debug */,
-				008AE3F91DB18AD800A98631 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 008AE3D81DB18AD800A98631 /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>47</string>
+	<key>objects</key>
+	<dict>
+		<key>0022EB501DB6A4E300284D9D</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>RemedyListTableViewController.h</string>
+			<key>path</key>
+			<string>Natural Remedies/RemedyListTableViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0022EB511DB6A4E300284D9D</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>RemedyListTableViewController.m</string>
+			<key>path</key>
+			<string>Natural Remedies/RemedyListTableViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0022EB521DB6A4E300284D9D</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>name</key>
+			<string>RemedyListTableViewController.xib</string>
+			<key>path</key>
+			<string>Natural Remedies/RemedyListTableViewController.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0022EB531DB6A4E300284D9D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0022EB511DB6A4E300284D9D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0022EB541DB6A4E300284D9D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0022EB521DB6A4E300284D9D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0022EB551DB6A4EB00284D9D</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>0022EB501DB6A4E300284D9D</string>
+				<string>0022EB511DB6A4E300284D9D</string>
+				<string>0022EB521DB6A4E300284D9D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>RemedyListVC</string>
+			<key>path</key>
+			<string>..</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0036EF8E1DC39B84008C39CD</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>Remedy.h</string>
+			<key>path</key>
+			<string>Natural Remedies/Remedy.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0036EF8F1DC39B84008C39CD</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>Remedy.m</string>
+			<key>path</key>
+			<string>Natural Remedies/Remedy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0036EF901DC39B84008C39CD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0036EF8F1DC39B84008C39CD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0036EF911DC39B89008C39CD</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>0036EF8E1DC39B84008C39CD</string>
+				<string>0036EF8F1DC39B84008C39CD</string>
+				<string>009712FE1DCA735700AE8891</string>
+				<string>009712FF1DCA735700AE8891</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Remedy</string>
+			<key>path</key>
+			<string>..</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0036EF921DC39C11008C39CD</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>Ailment.h</string>
+			<key>path</key>
+			<string>Natural Remedies/Ailment.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0036EF931DC39C11008C39CD</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>Ailment.m</string>
+			<key>path</key>
+			<string>Natural Remedies/Ailment.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0036EF941DC39C11008C39CD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0036EF931DC39C11008C39CD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0036EF951DC39C16008C39CD</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>0036EF921DC39C11008C39CD</string>
+				<string>0036EF931DC39C11008C39CD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Ailment</string>
+			<key>path</key>
+			<string>..</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0036EF961DC39CA7008C39CD</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>DAO.h</string>
+			<key>path</key>
+			<string>Natural Remedies/DAO.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0036EF971DC39CA7008C39CD</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>DAO.m</string>
+			<key>path</key>
+			<string>Natural Remedies/DAO.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0036EF981DC39CA7008C39CD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0036EF971DC39CA7008C39CD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0036EF991DC39CAD008C39CD</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>0036EF961DC39CA7008C39CD</string>
+				<string>0036EF971DC39CA7008C39CD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>DAO</string>
+			<key>path</key>
+			<string>..</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>003FB69C1DBE8977002F0E8D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>ailmentBullet4.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>003FB69D1DBE8977002F0E8D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>003FB69C1DBE8977002F0E8D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>003FB6A41DBEE8F7002F0E8D</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>editAilmentViewController.h</string>
+			<key>path</key>
+			<string>Natural Remedies/editAilmentViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>003FB6A51DBEE8F7002F0E8D</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>editAilmentViewController.m</string>
+			<key>path</key>
+			<string>Natural Remedies/editAilmentViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>003FB6A61DBEE8F7002F0E8D</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>name</key>
+			<string>editAilmentViewController.xib</string>
+			<key>path</key>
+			<string>Natural Remedies/editAilmentViewController.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>003FB6A71DBEE8F7002F0E8D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>003FB6A51DBEE8F7002F0E8D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>003FB6A81DBEE8F7002F0E8D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>003FB6A61DBEE8F7002F0E8D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>003FB6A91DBEE903002F0E8D</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>003FB6A41DBEE8F7002F0E8D</string>
+				<string>003FB6A51DBEE8F7002F0E8D</string>
+				<string>003FB6A61DBEE8F7002F0E8D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>editAilmentVC</string>
+			<key>path</key>
+			<string>..</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>005DBD591DBA81450039D2FD</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>005DBD5A1DBA818B0039D2FD</string>
+				<string>005DBD5B1DBA818B0039D2FD</string>
+				<string>005DBD5C1DBA818B0039D2FD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>TableViewCell</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>005DBD5A1DBA818B0039D2FD</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>BulletedTableViewCell.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>005DBD5B1DBA818B0039D2FD</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>BulletedTableViewCell.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>005DBD5C1DBA818B0039D2FD</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>BulletedTableViewCell.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>005DBD5D1DBA818B0039D2FD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>005DBD5B1DBA818B0039D2FD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>005DBD5E1DBA818B0039D2FD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>005DBD5C1DBA818B0039D2FD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>005DBD651DBA8EA90039D2FD</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>005DBD761DBAB1430039D2FD</string>
+				<string>005DBD701DBAA44D0039D2FD</string>
+				<string>005DBD711DBAA44D0039D2FD</string>
+				<string>003FB69C1DBE8977002F0E8D</string>
+				<string>005DBD721DBAA44D0039D2FD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>images</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>005DBD661DBA8EF40039D2FD</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>path</key>
+			<string>Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>005DBD671DBA8EF40039D2FD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>005DBD661DBA8EF40039D2FD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>005DBD681DBA9ACE0039D2FD</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>WebViewController.h</string>
+			<key>path</key>
+			<string>Natural Remedies/WebViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>005DBD691DBA9ACE0039D2FD</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>WebViewController.m</string>
+			<key>path</key>
+			<string>Natural Remedies/WebViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>005DBD6A1DBA9ACE0039D2FD</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>name</key>
+			<string>WebViewController.xib</string>
+			<key>path</key>
+			<string>Natural Remedies/WebViewController.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>005DBD6B1DBA9ACE0039D2FD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>005DBD691DBA9ACE0039D2FD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>005DBD6C1DBA9ACE0039D2FD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>005DBD6A1DBA9ACE0039D2FD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>005DBD6D1DBA9AD50039D2FD</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>005DBD681DBA9ACE0039D2FD</string>
+				<string>005DBD691DBA9ACE0039D2FD</string>
+				<string>005DBD6A1DBA9ACE0039D2FD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>WebView</string>
+			<key>path</key>
+			<string>..</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>005DBD701DBAA44D0039D2FD</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>herb.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>005DBD711DBAA44D0039D2FD</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>meditation.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>005DBD721DBAA44D0039D2FD</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>yoga.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>005DBD731DBAA44D0039D2FD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>005DBD701DBAA44D0039D2FD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>005DBD741DBAA44D0039D2FD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>005DBD711DBAA44D0039D2FD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>005DBD751DBAA44D0039D2FD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>005DBD721DBAA44D0039D2FD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>005DBD761DBAB1430039D2FD</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>capsule.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>005DBD771DBAB1430039D2FD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>005DBD761DBAB1430039D2FD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>006C62C11DC8CE44001047D7</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>editRemedyViewController.h</string>
+			<key>path</key>
+			<string>Natural Remedies/editRemedyViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>006C62C21DC8CE44001047D7</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>editRemedyViewController.m</string>
+			<key>path</key>
+			<string>Natural Remedies/editRemedyViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>006C62C31DC8CE44001047D7</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>name</key>
+			<string>editRemedyViewController.xib</string>
+			<key>path</key>
+			<string>Natural Remedies/editRemedyViewController.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>006C62C41DC8CE44001047D7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>006C62C21DC8CE44001047D7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>006C62C51DC8CE44001047D7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>006C62C31DC8CE44001047D7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>006C62C61DC8CE4A001047D7</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>006C62C11DC8CE44001047D7</string>
+				<string>006C62C21DC8CE44001047D7</string>
+				<string>006C62C31DC8CE44001047D7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>editRemedyVC</string>
+			<key>path</key>
+			<string>..</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>008AE3D71DB18AD800A98631</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>008AE3E21DB18AD800A98631</string>
+				<string>008AE3E11DB18AD800A98631</string>
+				<string>8A41256A6D98C45B48F96A4A</string>
+				<string>956765E38419D7D80028947B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>008AE3D81DB18AD800A98631</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastUpgradeCheck</key>
+				<string>0730</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>Emiko Clark</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>008AE3DF1DB18AD800A98631</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>7.3</string>
+						<key>DevelopmentTeam</key>
+						<string>X9KW2SQ39Q</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>008AE3DB1DB18AD800A98631</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 6.3</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+				<string>Base</string>
+			</array>
+			<key>mainGroup</key>
+			<string>008AE3D71DB18AD800A98631</string>
+			<key>productRefGroup</key>
+			<string>008AE3E11DB18AD800A98631</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>008AE3DF1DB18AD800A98631</string>
+			</array>
+		</dict>
+		<key>008AE3DB1DB18AD800A98631</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>008AE3F51DB18AD800A98631</string>
+				<string>008AE3F61DB18AD800A98631</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>008AE3DC1DB18AD800A98631</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>009713001DCA735700AE8891</string>
+				<string>0036EF981DC39CA7008C39CD</string>
+				<string>006C62C41DC8CE44001047D7</string>
+				<string>0036EF941DC39C11008C39CD</string>
+				<string>008AE3E81DB18AD800A98631</string>
+				<string>0036EF901DC39B84008C39CD</string>
+				<string>005DBD6B1DBA9ACE0039D2FD</string>
+				<string>008AE3E51DB18AD800A98631</string>
+				<string>003FB6A71DBEE8F7002F0E8D</string>
+				<string>005DBD5D1DBA818B0039D2FD</string>
+				<string>0022EB531DB6A4E300284D9D</string>
+				<string>008AE3FD1DB18CB600A98631</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>008AE3DD1DB18AD800A98631</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>1F78C6753E3451A3A61EF798</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>008AE3DE1DB18AD800A98631</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>005DBD771DBAB1430039D2FD</string>
+				<string>003FB6A81DBEE8F7002F0E8D</string>
+				<string>005DBD751DBAA44D0039D2FD</string>
+				<string>006C62C51DC8CE44001047D7</string>
+				<string>005DBD671DBA8EF40039D2FD</string>
+				<string>008AE3F31DB18AD800A98631</string>
+				<string>005DBD6C1DBA9ACE0039D2FD</string>
+				<string>003FB69D1DBE8977002F0E8D</string>
+				<string>005DBD731DBAA44D0039D2FD</string>
+				<string>005DBD5E1DBA818B0039D2FD</string>
+				<string>0022EB541DB6A4E300284D9D</string>
+				<string>005DBD741DBAA44D0039D2FD</string>
+				<string>008AE3F01DB18AD800A98631</string>
+				<string>009712FD1DCA714800AE8891</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>008AE3DF1DB18AD800A98631</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>008AE3F71DB18AD800A98631</string>
+			<key>buildPhases</key>
+			<array>
+				<string>06F2A8A573BB5C4CCCD26F64</string>
+				<string>008AE3DC1DB18AD800A98631</string>
+				<string>008AE3DD1DB18AD800A98631</string>
+				<string>008AE3DE1DB18AD800A98631</string>
+				<string>55AA875522969F082FE370A7</string>
+				<string>131420A7A933FD996124728D</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Natural Remedies</string>
+			<key>productName</key>
+			<string>Natural Remedies</string>
+			<key>productReference</key>
+			<string>008AE3E01DB18AD800A98631</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>008AE3E01DB18AD800A98631</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Natural Remedies.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>008AE3E11DB18AD800A98631</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>008AE3E01DB18AD800A98631</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>008AE3E21DB18AD800A98631</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>008AE3E61DB18AD800A98631</string>
+				<string>008AE3E71DB18AD800A98631</string>
+				<string>005DBD661DBA8EF40039D2FD</string>
+				<string>0036EF991DC39CAD008C39CD</string>
+				<string>0036EF951DC39C16008C39CD</string>
+				<string>0036EF911DC39B89008C39CD</string>
+				<string>005DBD591DBA81450039D2FD</string>
+				<string>008AE3FF1DB18CBD00A98631</string>
+				<string>003FB6A91DBEE903002F0E8D</string>
+				<string>0022EB551DB6A4EB00284D9D</string>
+				<string>006C62C61DC8CE4A001047D7</string>
+				<string>005DBD6D1DBA9AD50039D2FD</string>
+				<string>008AE3EF1DB18AD800A98631</string>
+				<string>005DBD651DBA8EA90039D2FD</string>
+				<string>008AE3F11DB18AD800A98631</string>
+				<string>008AE3F41DB18AD800A98631</string>
+				<string>009712FC1DCA714800AE8891</string>
+				<string>008AE3E31DB18AD800A98631</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Natural Remedies</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>008AE3E31DB18AD800A98631</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>008AE3E41DB18AD800A98631</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>008AE3E41DB18AD800A98631</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>008AE3E51DB18AD800A98631</key>
+		<dict>
+			<key>fileRef</key>
+			<string>008AE3E41DB18AD800A98631</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>008AE3E61DB18AD800A98631</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>008AE3E71DB18AD800A98631</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>AppDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>008AE3E81DB18AD800A98631</key>
+		<dict>
+			<key>fileRef</key>
+			<string>008AE3E71DB18AD800A98631</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>008AE3EF1DB18AD800A98631</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Assets.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>008AE3F01DB18AD800A98631</key>
+		<dict>
+			<key>fileRef</key>
+			<string>008AE3EF1DB18AD800A98631</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>008AE3F11DB18AD800A98631</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>008AE3F21DB18AD800A98631</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>LaunchScreen.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>008AE3F21DB18AD800A98631</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/LaunchScreen.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>008AE3F31DB18AD800A98631</key>
+		<dict>
+			<key>fileRef</key>
+			<string>008AE3F11DB18AD800A98631</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>008AE3F41DB18AD800A98631</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>008AE3F51DB18AD800A98631</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_ANALYZER_NONNULL</key>
+				<string>YES</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>ENABLE_TESTABILITY</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.3</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>008AE3F61DB18AD800A98631</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_ANALYZER_NONNULL</key>
+				<string>YES</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.3</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>008AE3F71DB18AD800A98631</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>008AE3F81DB18AD800A98631</string>
+				<string>008AE3F91DB18AD800A98631</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>008AE3F81DB18AD800A98631</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>E619C2381DF0580E1BE427F2</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>CODE_SIGN_IDENTITY</key>
+				<string>iPhone Developer</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>DEVELOPMENT_TEAM</key>
+				<string>X9KW2SQ39Q</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Natural Remedies/Info.plist</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.2</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.emikoclark.Natural-Remedies</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PROVISIONING_PROFILE</key>
+				<string></string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>008AE3F91DB18AD800A98631</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>611803CA1BEF1D7FAC9FC531</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>CODE_SIGN_IDENTITY</key>
+				<string>iPhone Developer</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>DEVELOPMENT_TEAM</key>
+				<string>X9KW2SQ39Q</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Natural Remedies/Info.plist</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.2</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.emikoclark.Natural-Remedies</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PROVISIONING_PROFILE</key>
+				<string></string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>008AE3FA1DB18CB600A98631</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AilmentTableViewController.h</string>
+			<key>path</key>
+			<string>Natural Remedies/AilmentTableViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>008AE3FB1DB18CB600A98631</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>AilmentTableViewController.m</string>
+			<key>path</key>
+			<string>Natural Remedies/AilmentTableViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>008AE3FD1DB18CB600A98631</key>
+		<dict>
+			<key>fileRef</key>
+			<string>008AE3FB1DB18CB600A98631</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>008AE3FF1DB18CBD00A98631</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>008AE3FA1DB18CB600A98631</string>
+				<string>008AE3FB1DB18CB600A98631</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>AilmentVC</string>
+			<key>path</key>
+			<string>..</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>009712FC1DCA714800AE8891</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>GoogleService-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>009712FD1DCA714800AE8891</key>
+		<dict>
+			<key>fileRef</key>
+			<string>009712FC1DCA714800AE8891</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>009712FE1DCA735700AE8891</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>FirebaseManager.h</string>
+			<key>path</key>
+			<string>Natural Remedies/FirebaseManager.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>009712FF1DCA735700AE8891</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>FirebaseManager.m</string>
+			<key>path</key>
+			<string>Natural Remedies/FirebaseManager.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>009713001DCA735700AE8891</key>
+		<dict>
+			<key>fileRef</key>
+			<string>009712FF1DCA735700AE8891</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>06F2A8A573BB5C4CCCD26F64</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>131420A7A933FD996124728D</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Natural Remedies/Pods-Natural Remedies-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>1F78C6753E3451A3A61EF798</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FF4E6DC153FAFE64B23D164D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>55AA875522969F082FE370A7</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Embed Pods Frameworks</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Natural Remedies/Pods-Natural Remedies-frameworks.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>611803CA1BEF1D7FAC9FC531</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-Natural Remedies.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-Natural Remedies/Pods-Natural Remedies.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8A41256A6D98C45B48F96A4A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E619C2381DF0580E1BE427F2</string>
+				<string>611803CA1BEF1D7FAC9FC531</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>956765E38419D7D80028947B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FF4E6DC153FAFE64B23D164D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E619C2381DF0580E1BE427F2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-Natural Remedies.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-Natural Remedies/Pods-Natural Remedies.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FF4E6DC153FAFE64B23D164D</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-Natural Remedies.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>008AE3D81DB18AD800A98631</string>
+</dict>
+</plist>
