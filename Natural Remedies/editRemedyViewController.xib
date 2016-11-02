@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="editRemedyViewController">
+            <connections>
+                <outlet property="remedyDescription" destination="9Rx-8a-lbn" id="6VZ-Kv-BZU"/>
+                <outlet property="remedyName" destination="wak-6F-7KQ" id="oWN-2U-w2W"/>
+                <outlet property="remedyType" destination="ZXX-3s-NqU" id="nHq-CJ-Il4"/>
+                <outlet property="remedyURL" destination="F0y-iC-R5F" id="tb4-Vv-5Br"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter New Remedy" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wak-6F-7KQ">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="A79-bP-mGr"/>
+                        <constraint firstAttribute="width" constant="315" id="vJu-AD-EP6"/>
+                    </constraints>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter url:    http://www.URL.com" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F0y-iC-R5F">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Rxu-yr-6xZ"/>
+                        <constraint firstAttribute="width" constant="315" id="jXd-n4-Lyp"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ZXX-3s-NqU">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="315" id="7j3-hJ-APf"/>
+                        <constraint firstAttribute="height" constant="28" id="PDk-bw-zXo"/>
+                    </constraints>
+                    <segments>
+                        <segment title="Herb"/>
+                        <segment title="Supplement"/>
+                        <segment title="Yoga"/>
+                        <segment title="Body and Movement"/>
+                    </segments>
+                </segmentedControl>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select the type of remedy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fPP-4A-RT2">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="IVu-4u-K2v"/>
+                        <constraint firstAttribute="width" constant="315" id="zJ7-9a-WP2"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter description" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Rx-8a-lbn">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="3Bx-Ko-9tY"/>
+                        <constraint firstAttribute="width" constant="315" id="N3P-iB-c3f"/>
+                    </constraints>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ZXX-3s-NqU" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0hR-hK-gR4"/>
+                <constraint firstItem="fPP-4A-RT2" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Da6-5l-XD5"/>
+                <constraint firstItem="ZXX-3s-NqU" firstAttribute="top" secondItem="F0y-iC-R5F" secondAttribute="bottom" constant="25" id="EHo-ex-Gu6"/>
+                <constraint firstItem="F0y-iC-R5F" firstAttribute="top" secondItem="9Rx-8a-lbn" secondAttribute="bottom" constant="20" id="JY2-e7-u11"/>
+                <constraint firstItem="9Rx-8a-lbn" firstAttribute="top" secondItem="wak-6F-7KQ" secondAttribute="bottom" constant="20" id="KSb-tY-cbS"/>
+                <constraint firstItem="F0y-iC-R5F" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="gle-VT-TiG"/>
+                <constraint firstItem="wak-6F-7KQ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ks2-SC-0lh"/>
+                <constraint firstItem="fPP-4A-RT2" firstAttribute="top" secondItem="ZXX-3s-NqU" secondAttribute="bottom" constant="5" id="lcx-Dh-oAL"/>
+                <constraint firstItem="wak-6F-7KQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="150" id="qv1-wg-5ii"/>
+                <constraint firstItem="9Rx-8a-lbn" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="usv-am-oVu"/>
+            </constraints>
+            <point key="canvasLocation" x="76.5" y="108.5"/>
+        </view>
+    </objects>
+</document>

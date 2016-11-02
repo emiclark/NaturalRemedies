@@ -36,7 +36,16 @@
 
 - (void) addButtonTapped: (id) sender {
     NSLog(@"addButtonTapped");
+    self.editRemedyVC = [[editRemedyViewController alloc] initWithNibName:@"editRemedyViewController" bundle:nil];
+    self.editRemedyVC.remedyList =  self.remedyList;
+    
+    [self.navigationController pushViewController:self.editRemedyVC animated:YES];
 }
+
+- (void) viewDidAppear:(BOOL)animated {
+    [self.remedyTV reloadData];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

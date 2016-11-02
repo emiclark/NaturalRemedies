@@ -22,7 +22,7 @@
     
     UIBarButtonItem *cancelButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(cancelButtonTapped:)];
     
-    self.navigationItem.rightBarButtonItems = @[cancelButton, saveButton];
+    self.navigationItem.rightBarButtonItems = @[saveButton, cancelButton];
 }
 
 #pragma mark Buttons Tapped
