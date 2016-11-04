@@ -10,7 +10,7 @@
             <connections>
                 <outlet property="remedyDescription" destination="9Rx-8a-lbn" id="6VZ-Kv-BZU"/>
                 <outlet property="remedyName" destination="wak-6F-7KQ" id="oWN-2U-w2W"/>
-                <outlet property="remedyType" destination="ZXX-3s-NqU" id="nHq-CJ-Il4"/>
+                <outlet property="remedyTypeSC" destination="ZXX-3s-NqU" id="3bX-df-foq"/>
                 <outlet property="remedyURL" destination="F0y-iC-R5F" id="tb4-Vv-5Br"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -46,7 +46,7 @@
                     <segments>
                         <segment title="Herb"/>
                         <segment title="Supplement"/>
-                        <segment title="Yoga"/>
+                        <segment title="Meditation"/>
                         <segment title="Body and Movement"/>
                     </segments>
                 </segmentedControl>

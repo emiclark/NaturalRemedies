@@ -25,25 +25,54 @@
     
     //register TableViewCell xib file and cell identifier for custom cell reuse
     [self.ailmentTableView registerNib:[UINib nibWithNibName:@"BulletedTableViewCell" bundle:nil] forCellReuseIdentifier:@"myCell"];
-
-    NSLog(@"%@",self.dao.ailmentList);
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addButtonTapped:)];
-     self.navigationItem.rightBarButtonItems = @[addButton, self.editButtonItem];
+    self.navigationItem.rightBarButtonItems = @[addButton, self.editButtonItem];
+
 }
 
 - (void) viewWillAppear:(BOOL)animated {
+    // if done editing, toggle Done button to Edit after saving ailment and popping editAilmentVC
+    if (self.editAilmentVC.isEditMode == NO){
+        [self setEditing: NO animated: NO];
+    }
     [self.ailmentTableView reloadData];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+#pragma mark - Table view delegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    if (self.ailmentTableView.editing == YES) {
+        
+        // edit ailment category
+        self.editAilmentVC = [[editAilmentViewController alloc] initWithNibName:@"editAilmentViewController" bundle:nil];
+        
+        // set self.editAilmentVC.ailment object with row information
+        self.editAilmentVC.ailment  = [self.dao.ailmentList objectAtIndex: indexPath.row];
+        self.editAilmentVC.isEditMode = YES;
+        self.editAilmentVC.title = [NSString stringWithFormat: @"Update %@", [self.dao.ailmentList objectAtIndex: indexPath.row].ailmentName ];
+        
+        // Push the view controller.
+        [self.navigationController pushViewController:self.editAilmentVC animated:YES];
+        
+    }
+    else {
+        // add new ailment
+        self.remedyListVC = [[RemedyListTableViewController alloc] initWithNibName:@"RemedyListTableViewController" bundle:nil];
+        self.remedyListVC.title = self.dao.ailmentList[indexPath.row].ailmentName;
+        self.remedyListVC.remedyList = self.dao.ailmentList[indexPath.row].remedyList;
+        
+        // Push the view controller.
+        [self.navigationController pushViewController: self.remedyListVC animated:YES];
+    }
 }
+
 
 #pragma mark Buttons Tapped
 
@@ -75,7 +104,6 @@
     cell.nameLabel.text = [self.dao.ailmentList objectAtIndex:indexPath.row].ailmentName;
     cell.descriptionLabel.text = [self.dao.ailmentList objectAtIndex:indexPath.row].ailmentDescription;
     return cell;
-        
 }
 
 
@@ -90,12 +118,15 @@
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
+        
         // Delete the row from the data source
         [self.dao.ailmentList removeObjectAtIndex:indexPath.row];
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
+    
+    } else if (editingStyle ==  UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table
     }
+
     [tableView reloadData];
 }
 
@@ -103,6 +134,7 @@
 
 // Override to support rearranging the table view.
 - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
+    
     Ailment *objectToMove = [self.dao.ailmentList objectAtIndex:fromIndexPath.row];
     [self.dao.ailmentList removeObjectAtIndex:fromIndexPath.row];
     [self.dao.ailmentList insertObject:objectToMove atIndex:toIndexPath.row];
@@ -118,19 +150,6 @@
 
 
 
-#pragma mark - Table view delegate
-
-// In a xib-based application, navigation from a table can be handled in -tableView:didSelectRowAtIndexPath:
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    // create view controller object for remedy view controller
-    self.remedyListVC = [[RemedyListTableViewController alloc] initWithNibName:@"RemedyListTableViewController" bundle:nil];
-    self.remedyListVC.title = self.dao.ailmentList[indexPath.row].ailmentName;
-    self.remedyListVC.remedyList = self.dao.ailmentList[indexPath.row].remedyList;
-    
-    // Push the view controller.
-    [self.navigationController pushViewController: self.remedyListVC animated:YES];
-}
 
 
 /*
@@ -142,5 +161,12 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+#pragma mark  Misc Methods
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
 
 @end

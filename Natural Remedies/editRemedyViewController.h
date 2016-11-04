@@ -12,14 +12,15 @@
 
 @interface editRemedyViewController : UIViewController
 
-@property  (retain, nonatomic) DAO *dao;
-@property (weak, nonatomic)  NSMutableArray <Remedy*> *remedyList;
+@property (nonatomic, retain) DAO *dao;
+@property (nonatomic, retain)  NSMutableArray <Remedy*> *remedyList;
+@property (nonatomic, retain) Remedy *remedy;
+@property (nonatomic) BOOL isEditMode;
 
-@property (weak, nonatomic) IBOutlet UITextField *remedyName;
-@property (weak, nonatomic) IBOutlet UITextField *remedyDescription;
-@property (weak, nonatomic) IBOutlet UITextField *remedyURL;
-@property (weak, nonatomic) IBOutlet UISegmentedControl *remedyType;
-
+@property (nonatomic, strong) IBOutlet UITextField *remedyName;
+@property (nonatomic, strong) IBOutlet UITextField *remedyDescription;
+@property (nonatomic, strong) IBOutlet UITextField *remedyURL;
+@property (nonatomic)         IBOutlet UISegmentedControl *remedyTypeSC;
 
 - (void) saveButtonTapped: (id*)sender;
 - (void) cancelButtonTapped: (id*)sender;

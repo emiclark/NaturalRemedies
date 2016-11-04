@@ -25,16 +25,33 @@
     self.navigationItem.rightBarButtonItems = @[saveButton, cancelButton];
 }
 
+- (void) viewWillAppear:(BOOL)animated {
+    // check if edit or add mode by checking if ailment is NULL
+    if (self.ailment == NULL) {
+        // in add mode
+        self.title = @"Add New Ailment";
+    }
+    else {
+        //in edit mode
+        self.ailmentNameLabel.text = self.ailment.ailmentName;
+        self.ailmentDescriptionLabel.text = self.ailment.ailmentDescription;
+    }
+}
+
 #pragma mark Buttons Tapped
 
 -(void) saveButtonTapped: (id) sender {
-    NSLog(@"saveButtonTapped");
-    self.ailmentTVC = [[AilmentTableViewController alloc] init];
-    
-    // add new ailment and description to data array
-    Ailment *ailment = [[Ailment alloc]initWithName:self.ailmentNameLabel.text andDescription:self.ailmentDescriptionLabel.text];
-    [self.dao.ailmentList addObject:ailment];
-    
+    // in edit mode, update ailment
+    if (self.isEditMode == YES) {
+        self.ailment.ailmentName = self.ailmentNameLabel.text;
+        self.ailment.ailmentDescription = self.ailmentDescriptionLabel.text;
+        self.isEditMode = NO;
+    }
+    //in add mode, add ailment
+    else {
+        Ailment *addAilment = [[Ailment alloc] initWithName:self.ailmentNameLabel.text andDescription:self.ailmentDescriptionLabel.text];
+        [self.dao.ailmentList addObject: addAilment];
+    }
     
     //pop to root viewcontroller
     [self.navigationController popViewControllerAnimated:YES];
@@ -43,6 +60,8 @@
 -(void) cancelButtonTapped: (id) sender {
     [self.navigationController popViewControllerAnimated:YES];
 }
+
+#pragma mark Misc Methods
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

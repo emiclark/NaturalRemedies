@@ -9,10 +9,10 @@
 #import <Foundation/Foundation.h>
 
 @interface Remedy : NSObject
-@property (nonatomic, weak) NSString *remedyName;
-@property (nonatomic, weak) NSString *remedyDescription;
-@property (nonatomic, weak) NSString *remedyType;
-@property (nonatomic, weak) NSString *remedyURL;
+@property (nonatomic, retain) NSString *remedyName;
+@property (nonatomic, retain) NSString *remedyDescription;
+@property (nonatomic, retain) NSString *remedyType;
+@property (nonatomic, retain) NSString *remedyURL;
 
 
 - (id)initWithName: (NSString *)remedyName andDescription: (NSString *)remedyDescription andType: (NSString*) remedyType andURL: (NSString*)remedyURL;

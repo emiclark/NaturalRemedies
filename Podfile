@@ -4,6 +4,7 @@
 target 'Natural Remedies' do
 
 # Pods for CocoapodsTest
-  pod 'Firebase'
+  pod 'Firebase/Core'
+  pod 'Firebase/Database'
 end
 

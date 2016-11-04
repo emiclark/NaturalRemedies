@@ -16,7 +16,9 @@
 @interface editAilmentViewController : UIViewController
 
 @property (nonatomic, retain) DAO *dao;
-@property (nonatomic,retain) AilmentTableViewController *ailmentTVC;
+@property (nonatomic, strong) Ailment  *ailment;
+@property (nonatomic,retain) AilmentTableViewController  *ailmentTVC;
+@property (nonatomic) BOOL isEditMode;
 
 @property (weak, nonatomic) IBOutlet UITextField *ailmentNameLabel;
 @property (weak, nonatomic) IBOutlet UITextField *ailmentDescriptionLabel;

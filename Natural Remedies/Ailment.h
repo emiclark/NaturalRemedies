@@ -11,8 +11,8 @@
 
 @interface Ailment : NSObject
 
-@property (nonatomic, weak) NSString *ailmentName;
-@property (nonatomic, weak) NSString *ailmentDescription;
+@property (nonatomic, retain) NSString *ailmentName;
+@property (nonatomic, retain) NSString *ailmentDescription;
 @property (nonatomic, retain) NSMutableArray <Remedy *> *remedyList;
 
 - (id) initWithName:(NSString*)ailmentName andDescription: (NSString*)ailmentDescription;

@@ -12,13 +12,15 @@
 #import "Remedy.h"
 #import "DAO.h"
 
+
 @class editRemedyViewController;
 
 @interface RemedyListTableViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>
-@property (nonatomic, retain) NSMutableArray <Remedy*> *remedyList;
 @property (nonatomic, retain) DAO *dao;
+@property (nonatomic, retain) NSMutableArray <Remedy*> *remedyList;
+@property (nonatomic) BOOL isEditMode;
 
-@property (nonatomic, retain) editRemedyViewController *editRemedyVC;
+@property (nonatomic, strong) editRemedyViewController *editRemedyVC;
 @property (nonatomic, strong) IBOutlet UITableView *remedyTV;
 @property (nonatomic, strong) WebViewController *webView;
 

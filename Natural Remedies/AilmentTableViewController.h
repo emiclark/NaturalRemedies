@@ -16,11 +16,10 @@
 @interface AilmentTableViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) DAO *dao;
-
 @property (nonatomic, strong) RemedyListTableViewController *remedyListVC;
 @property (nonatomic, strong) editAilmentViewController *editAilmentVC;
-
 @property (strong, nonatomic) IBOutlet UITableView *ailmentTableView;
+
 - (void ) addButtonTapped: (id) sender;
 
 
